@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch video</title>
+
+    <link href="./Video-player.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/35c398e458.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="./Video-player.js"></script>
+</head>
+
+<body>
+    <a id="Back-to-home" href="../Index.html">Back</a>    
+
+    <h1 id="main-heading">Watch Video's</h1>
+
+    <section id="main-section">
+        <div id="video-section">
+            <div id="player-section">
+                <iframe id="video-player" src="https://www.youtube.com/embed/hJxaVD6eAtc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                <div id="description">
+                    <div id="video-actions">
+                        <p id="video-count">Watch and enjoy............</p>
+
+                        <div>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment-alt"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <!-- <h2 id="video-title" class="title">Croissants | Flour and Stone</h2>
+
+                    <p id="video-description">There is no other way but to commit wholeheartedly to a relationship with a croissant. We have all found ourselves at the mercy of its allure. Here, in another epic film by the uber talented Nathan Rodger, our Erin divulges her personal romance with The Croissant.</p> -->
+                </div>
+            </div>
+
+            <div id=playlist>
+                <div id="card1" class="playlist-card active-card" onClick="document.getElementById('video-player').src='https://www.youtube.com/embed/hJxaVD6eAtc'">
+                    <img class="thumbnail" src="https://i.vimeocdn.com/video/600595198_390x220.webp">
+                    <h3 class="thumbnail-title">Croissants | Flour and Ston</h3>
+                </div>
+
+                <div id="card2" class="playlist-card" onClick="document.getElementById('video-player').src='https://www.youtube.com/embed/cGFSBn7xNyA'">
+                    <img class="thumbnail" src="https://i.vimeocdn.com/video/604150056_390x220.webp">
+                    <h3 class="thumbnail-title">Perfect Mashed Potatoes and Gravy</h3>
+                </div>
+
+                <div id="card3" class="playlist-card" onClick="document.getElementById('video-player').src='https://www.youtube.com/embed/7HU9iGd8ZT0'">
+                    <img class="thumbnail" src="https://i.vimeocdn.com/video/726986673_390x220.webp">
+                    <h3 class="thumbnail-title">The Heart of Soba</h3>
+                </div>
+
+                <div id="card4" class="playlist-card" onClick="document.getElementById('video-player').src='https://www.youtube.com/embed/JqNIJRWHnmY'">
+                    <img class="thumbnail" src="https://i.vimeocdn.com/video/570486309_390x220.webp">
+                    <h3 class="thumbnail-title">Grilled Cheese 9 Ways</h3>
+                </div>
+
+                <div id="card5" class="playlist-card" onClick="document.getElementById('video-player').src='https://www.youtube.com/embed/Bz3-A7kQOhI'">
+                    <img class="thumbnail" src="https://i.vimeocdn.com/video/602705517_390x220.webp">
+                    <h3 class="thumbnail-title">Pineapple Cheesecake</h3>
+                </div>
+
+                <div id="card6" class="playlist-card" onClick="document.getElementById('video-player').src='https://www.youtube.com/embed/nh16ZaXIW6k'">
+                    <img class="thumbnail" src="https://i.vimeocdn.com/video/537261616_390x220.jpg">
+                    <h3 class="thumbnail-title">Lemony Chicken Noodle Soup</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

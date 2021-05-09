@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    background-image: url(./91657.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+   
+}
+
+#Back-to-home{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 24px;
+    color: tomato;
+    text-decoration: underline;
+}
+
+#main-heading{
+    font-family: 'Frijole', cursive;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 70px;
+    cursor: pointer;
+    
+
+    background-image: linear-gradient(to right, #23deff, #fbff24);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip:  text;
+}
+
+#card-wrapper{
+    width: 100vw;
+    height: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    width: 40%;
+    height: 300px;
+    background-color: gray;
+    border-radius: 8px;
+    margin: 16px;
+    text-align: center;
+    padding: 24px;
+}
+
+.left-card{
+    background-color: rgb(5, 22, 97);
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.left-card > h3{
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(238, 255, 0);
+}
+
+.left-card > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-card > div > img{
+    width: 100px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.next-step{
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.previous-step{
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#eye-card h3{
+    margin-bottom: 16px;
+}
+
+#Eye-card img{
+    width: 70px;
+    background-color: rgba(104, 97, 97, 0.822);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;  
+}
+
+#Mouth-card h3{
+    margin-bottom: 16px;
+}
+
+#Mouth-card img{
+    width: 70px;
+    background-color: rgba(104, 97, 97, 0.822);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;  
+}
+
+.right-card{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skin-card{
+    display: block;
+}
+
+#Eye-card{
+    display: none;
+}
+
+#Mouth-card{
+    display: none;
+}
+
+
+
+
+
+
+#emoji {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+#skin {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#eyes {
+    width: 100%;
+    top:-4px;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+#mouth {
+    width: 100%;
+    top: 2px;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+}

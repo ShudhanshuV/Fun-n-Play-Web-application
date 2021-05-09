@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Maker</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+    <link href="./Emoji-maker.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <a id="Back-to-home" href="../Index.html">Home</a>
+
+        <h1 id="main-heading">Emoji Maker</h1>
+    </div>
+
+    <div id="card-wrapper">
+        <div id="skin-card" class="card left-card">
+            <h3>Select Color</h3>
+
+                <div>
+                    <img id="red-skin" src="./Images/skin/red.png">
+
+                    <img id="yellow-skin" src="./Images/skin/yellow.png">
+
+                    <img id="green-skin" src="./Images/skin/green.png">
+                </div>
+            <i id="rightclick1" class="fas fa-angle-double-right next-step"></i>
+        </div>
+
+        <div id="Eye-card" class="card left-card">
+            <h3>Select Eye</h3>
+
+            <i id="leftclick1" class="fas fa-angle-double-left previous-step"></i>
+            
+            <div>
+                <img id="close-eye" src="./Images/eyes/closed.png">
+
+                <img id="laugh-eye" src="./Images/eyes/laughing.png">
+                
+                <img id="long-eye" src="./Images/eyes/long.png">
+            </div>
+            <div>
+                <img id="normal-eye" src="./Images/eyes/normal.png">
+
+                <img id="rolling-eye" src="./Images/eyes/rolling.png">
+
+                <img id="winking-eye" src="./Images/eyes/winking.png">
+            </div>
+
+            <i id="rightclick2" class="fas fa-angle-double-right next-step"></i>
+        </div>
+
+        <div id="Mouth-card" class="card left-card">
+            <h3>Select Mouth</h3>
+
+            <i id="leftclick2" class="fas fa-angle-double-left previous-step"></i>
+
+            <div>
+                <img id="open-mouth" src="./Images/mouth/open.png">
+
+                <img id="sad-mouth" src="./Images/mouth/sad.png">
+
+                <img id="smiling-mouth" src="./Images/mouth/smiling.png">
+            </div>
+            <div>
+                <img id="straight-mouth" src="./Images/mouth/straight.png">
+                
+                <img id="teeth-mouth" src="./Images/mouth/teeth.png">
+            </div>
+        </div>
+
+        <div class="card right-card">
+            <div id="emoji">
+                <img id="skin" src="" />
+                <img id="eyes" src="" />
+                <img id="mouth" src="" />
+            </div>
+        </div>
+    </div>  
+
+    <script src="./Emoji-maker.js"></script>
+</body>
+</html>

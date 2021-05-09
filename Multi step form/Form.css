@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background: url(https://www.xmple.com/wallpaper/black-blue-gradient-linear-1920x1080-c2-000000-000080-a-45-f-14.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Back-to-home{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 24px;
+    color: tomato;
+    text-decoration: underline;
+}
+
+#main-heading{
+    font-family: 'Frijole', cursive;
+    margin: 0;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 70px;
+    cursor: pointer;
+    
+
+    background-image: linear-gradient(to right, #23deff, #fbff24);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip:  text;
+}
+
+#main-container{
+    width: 100%;
+    height: 100vh;
+    padding: 0% 8%;
+    box-sizing: border-box;
+    margin-top: 0px;
+    
+}
+
+#form-container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    width: 40%;
+    
+    border-radius: 10px;
+    
+
+    background: url(https://img.freepik.com/free-vector/light-wave-border-background_53876-78863.jpg?size=626&ext=jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    perspective: 1000px;
+}
+
+.form--container{
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+
+    box-shadow: 0 5px 15px rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    
+}
+
+.form-group{
+    margin: 1em;
+    padding: 0.5em;
+    position: relative;
+    box-sizing: border-box;
+}
+
+legend{
+    color: wheat;
+    font-size: 20px;
+}
+
+#Second-legend{
+    text-align: center;
+}
+
+#third-legend{
+    text-align: right;
+}
+
+.form-group > label{
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.form-group > input{
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+   background: rgba(0, 0, 0, .1);    color: black;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .5)inset;
+   color: whitesmoke;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.form-group > select{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+
+.form-group > textarea{
+    resize: none;
+    width: 100%;
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: whitesmoke;
+    
+    background: rgba(0, 0, 0, .1);    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5)inset;
+}
+
+.form-group-button{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#first-step > .form-group-button{
+    justify-content: flex-end;
+}
+
+button{
+    border: 1px solid rgb(65, 55, 55);
+    background: transparent;
+    color: sandybrown;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 0;
+    font-weight: 600;
+}
+
+button:active{
+    background: #fff;
+    color: #000;
+}
+
+#first-step{
+    display: block;
+}
+
+#second-step, #third-step{
+        display: none;
+}
+
+.error{
+    color: rgb(199, 0, 0);
+    font-family: sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    margin: 0px;
+    margin-top: 4px;
+    font-style: italic;
+    display: none;
+}
+
+
+#SuccessContainer{
+    border: 1px solid rgb(37, 21, 21);
+    border-radius: 10px;
+    width: 30%;
+    background-color: #2b3252;
+    color: #00ad2b;
+    height: 200px;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+#SuccessContainer h3{
+    margin-top: 3em;
+    font-size: 1.3em;
+    font-weight: normal;
+    letter-spacing: 0.4;
+    text-align: center;
+}

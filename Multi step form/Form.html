@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link href="./Form.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="./Form.js"></script>
+</head>
+
+<body>
+    <a id="Back-to-home" href="../Index.html">Back</a>
+    
+    <h1 id="main-heading">The-Multi-Step-Form</h1>
+
+    <main id="main-container">
+        <div id="form-container">
+            <form method="GET" id="form">
+                <fieldset id="first-step" class="form--container">
+                    <legend>Step:-1</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input id="first-name" class="input-required1" type="text" placeholder="First name" name="firstname">
+                        <p class="error" id="first-name-error">Please enter the valid name</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text" placeholder="Last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input id="email-text" class="input-required1" type="text" placeholder="Email Address" required>
+                        <p class="error" id="email-error">Please enter a valid email</p>
+                    </div>
+
+                    <div class="form-group-button">
+                        <button id="next1">NEXT</button>
+                    </div>
+                </fieldset>
+
+                <fieldset id="second-step" class="form--container">
+                    <legend id="Second-legend">Step:-2</legend>
+                    <div class="form-group">
+                        <label for="contact">Contact *</label>
+                        <input id="contact-text" class="input-required2" type="tel" placeholder="Contact no." required>
+                        <p class="error" id="contact-error">Please enter 10 digit mobile no.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input id="city" type="text" placeholder="City name">
+                        <p class="error" id="city-error">Please enter a valid City name.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <input id="country" class="input-required2" type="text" placeholder="Country name" required>
+                        <p class="error" id="country-error">Please enter a valid Country name</p>
+                    </div>
+
+                    <div class="form-group-button">
+                        <button id="previous1">PREVIOUS</button>
+                        <button id="next2">NEXT</button>
+                    </div>
+                </fieldset>
+
+                <fieldset id="third-step" class="form--container">
+                    <legend id="third-legend">Step:-3</legend>
+                    <div class="form-group">
+                        <label for="select-program">Enrolled Program *</label>
+                        <select id="select-program" required>
+                            <option value="select">-- Select Program --</option>
+                            <option value="web developer">Web Developer</option>
+                            <option value="React developer">React Developer</option>
+                            <option value="Angular developer">Angular Developer</option>
+                            <option value="Python developer">Python Developer</option>
+                        </select>
+                        <p class="error" id="program-error">Please select the valid program</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="textarea" name="message" cols="30" rows="5" maxlength="50" required></textarea>
+                        <p class="error" id="message-error">Please enter a message</p>
+                    </div>
+
+                    <div class="form-group-button">
+                        <button id="previous2">PREVIOUS</button>
+                        <button id="submit">SUBMIT</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div id="SuccessContainer" >
+                <h3 aria-required="true">Your form has been <br /> submitted successfully!</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

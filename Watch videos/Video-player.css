@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+
+
+    background-image: url(./4498409-red-wallpapers.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+#Back-to-home{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 24px;
+    color: rgb(218, 213, 213);
+    text-decoration: underline;
+}
+
+#main-heading{
+    font-family: 'Frijole', cursive;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 70px;
+    cursor: pointer;
+    
+
+    background-image: linear-gradient(to right, #23deff, #fbff24);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip:  text;
+}
+
+#main-section{
+    width: 100%;
+    padding: 0 16%;
+    padding-bottom: 4%;
+    box-sizing: border-box;
+}
+
+#video-section{
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    background: url(./4498491-red-wallpapers.jpg);
+    background-position: center;
+    background-repeat: initial;
+    border-radius: 24px;
+    padding: 26px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    box-shadow: 2px 2px 12px red;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#player-section{
+    width: 70%;
+    height: 400px;
+    padding: 24px;
+    border-right: 1px solid whitesmoke;
+    
+}
+
+#player-section iframe {
+    width: 550px;
+    height: 400px;
+    padding-bottom: 26px;
+
+    border-bottom: 1px solid white;
+
+    
+}
+
+#video-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#video-actions p {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 16px;
+    color: orange;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#video-actions i {
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+    color: orange;
+}
+
+/* #video-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top: 1px solid whitesmoke;
+    padding-top: 16PX;
+    color: tan;
+}
+
+#video-description{
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+} */
+
+#playlist{
+    width: 30%;
+    margin-left: 16px;
+    padding-right: 18px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+
+    
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background: yellow;
+}
+
+.playlist-card{
+    width: 100%;
+    border: 1px solid rgba(173, 0, 0, 0.329);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+
+.active-card{
+    border: 4px solid yellow;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    
+}
+
+.thumbnail{
+    width: 100%;
+    height: 150px;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.thumbnail-title{
+    font-size: 16px;
+    padding: 16px;
+    margin: 0;
+    font-weight: 600;
+    color: snow;
+}
