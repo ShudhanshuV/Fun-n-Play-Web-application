@@ -10,6 +10,6 @@ This web app is a collection of four web applications. which is created with HTM
 
 3rd application------- Third is a video-watching application. where you can watch and learn many recipe videos and enjoy them.
 
-4th application------ Fourth application is a review form where you have to enter your Name, Email, Phone NO, City Name, Country Name, Select Program, and send us a message.
+4th application------ Fourth application is a review form where you have to enter your Name, Email, Phone NO, City Name, Country Name, Select Program, and send us a message. I also use RegEx for the input validation.
 
 These are the four web applications that are interesting, creative, and fun. Hope you like it.
